@@ -1,0 +1,100 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+figure{
+    display: flex;
+    margin: 0%;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.white{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+}
+
+
+@media screen and (orientation: landscape) {
+    body{
+        background-image: url('bg/black-podium.svg');
+        background-size: 80vh;
+        background-repeat: no-repeat;
+        background-position: center, center;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    nav{
+        width: 50vw;
+        display: flex;
+        position: relative;
+        right: 20px;
+        justify-content: end;
+    }
+
+    #text{
+        transform: translateY(500%);
+    }
+
+    .sp{
+       margin-right: 5vw; 
+    }
+
+    #flicker{
+        transform: translate(11%, 230%);
+        height: 6vh;
+        overflow: hidden;
+    }
+
+    .hf{
+        font-size: xx-large;
+        margin: 0%;
+        animation: flick 4s infinite;
+        color: gray;
+    }
+
+    #yus{
+        transform: translateY(100%);
+    }
+
+      
+#icon1{
+    width: 50%;
+    position: relative;
+    top: -5px;
+    left: 5px;
+    margin: 0%;
+    
+}
+
+@keyframes flick {
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-100%);
+    }
+    75%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+}
