@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    background-color: #C0C0C0;
+    background-color: #FFFFFF;
     padding: 0px;
     margin: 0%;
     height: 100vh;
@@ -28,7 +28,7 @@ a{
 }
 
 .white{
-    color: white;
+    color: black;
 }
 
 
