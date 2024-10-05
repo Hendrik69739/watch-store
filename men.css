@@ -1,100 +1,119 @@
 body{
-    width: 100vw;
+    color: white;
+    background-color: black;
     height: 100vh;
+    margin: 0px;
+    background-image: url('/bg/black-podium.svg');
+    background-position: center, center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
-
-figure{
-    display: flex;
-    margin: 0%;
-}
-
 
 header{
+    width: 100%;
     display: flex;
-    align-items: center;
-    width: 100vw;
     justify-content: space-between;
+    align-items: center;
+    height: 15%;
 }
 
-.white{
-    color: white;
+#icon1{
+    width: 70px;
+    margin: 0px;
+    height: 70px;
+    transform: translateX(-40px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
 
 a{
     text-decoration: none;
-    font-weight: 700;
-    font-size: larger;
+    color: white;
 }
 
+section{
+    display: flex;
+    height: 85%;
+}
 
-@media screen and (orientation: landscape) {
-    body{
-        background-image: url('bg/black-podium.svg');
-        background-size: 80vh;
-        background-repeat: no-repeat;
-        background-position: center, center;
-        background-color: black;
-        overflow: hidden;
-    }
-    
-    nav{
-        width: 50vw;
-        display: flex;
-        position: relative;
-        right: 20px;
-        justify-content: end;
-    }
-
-    #text{
-        transform: translateY(500%);
-    }
-
-    .sp{
-       margin-right: 5vw; 
-    }
-
-    #flicker{
-        transform: translate(11%, 230%);
-        height: 6vh;
-        overflow: hidden;
-    }
-
-    .hf{
-        font-size: xx-large;
-        margin: 0%;
-        animation: flick 4s infinite;
-        color: gray;
-    }
-
-    #yus{
-        transform: translateY(100%);
-    }
-
-      
-#icon1{
+#yus{
     width: 50%;
-    position: relative;
-    top: -5px;
-    left: 5px;
     margin: 0%;
-    
+    display: flex;
+    transform: translateY(-10%);
 }
 
-@keyframes flick {
-    0%{
-        transform: translateY(0%);
-    }
-    25%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-100%);
-    }
-    75%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
+#carousel{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -70px;
+    gap: 150px;
+    animation: slider 15s ease-in-out infinite;
 }
+
+text{
+    text-align: center;
+    align-self: flex-end;
+}
+
+.img{
+    display: flex;
+    height: 70%;
+}
+
+#flicker{
+    height: 30px;
+    overflow: hidden;
+}
+
+.hf{
+    transform: translateY(-70%); /*250*/
+}
+
+@keyframes slider {
+    0%{
+        transform: translateX(-20%);
+    }
+    10%{
+        transform: translateX(-20%);
+    }
+    16.67%{
+        transform: translateX(-100%);
+    }
+    26.67%{
+        transform: translateX(-100%);
+    }
+    33.34%{
+        transform: translateX(-170%);
+    }
+    43.34%{
+        transform: translateX(-170%);
+    }
+    50.01%{
+        transform: translateX(-240%);
+    }
+    60.01%{
+        transform: translateX(-240%);
+    }
+    66.67%{
+        transform: translateX(-320%);
+    }
+    76.68%{
+        transform: translateX(-320%);
+    }
+    86.68%{
+        transform: translateX(-390%);
+    }
+    93.35%{
+        transform: translateX(-390%);
+    }
+
+
 }
