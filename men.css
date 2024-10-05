@@ -75,6 +75,7 @@ text{
 
 .hf{
     transform: translateY(-70%); /*250*/
+    animation: flick 6s ease-in-out infinite;
 }
 
 @keyframes slider {
@@ -116,4 +117,19 @@ text{
     }
 
 
+}
+
+@keyframes flick {
+    0%{
+        transform: translateY(-70%);
+    }
+    25%{
+        transform: translateY(-70%);
+    }
+    50%{
+        transform: translateY(-250%);
+    }
+    75%{
+        transform: translateY(-250%);
+    }
 }
